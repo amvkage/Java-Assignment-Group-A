@@ -25,5 +25,3 @@ This project demonstrates the use of:
 
 ## How to Run
 Compile and run `Main.java`. The output will demonstrate the use of interface methods, abstract class methods, and concrete class implementations.
-
-## Output Example
