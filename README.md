@@ -1,27 +1,31 @@
 # Java-Assignment-Group-A
 Java Assignment-Group A
-# Java Class Types: Interface vs Abstract Class vs Concrete Class
+# OOP Example: Interface, Abstract Class, and Concrete Class
 
-## Overview
-This project demonstrates the use of:
-- **Interface**: Declares a contract without implementation.
-- **Abstract Class**: Provides partial implementation with abstract and concrete methods.
-- **Concrete Class**: Fully implemented class that can be instantiated.
+##  Purpose
+This project shows the difference between an **interface**, an **abstract class**, and a **concrete class** in Java using a simple animal example.
 
-## Structure
 
-1. **Interface - `Animal`**
-   - Declares an abstract method `makeSound()` and a default method `sleep()`.
 
-2. **Abstract Class - `Mammal`**
-   - Implements the `Animal` interface.
-   - Contains:
-     - Abstract method `eat()`
-     - Concrete method `breathe()`
+## Class Types Explained
+- **Interface**: Defines a contract with no implementation (e.g., `Animal`).
+- **Abstract Class**: Provides partial implementation, including both abstract and concrete methods (e.g., `Mammal`).
+- **Concrete Class**: A fully implemented class that can be instantiated (e.g., `Dog`).
 
-3. **Concrete Class - `Dog`**
-   - Extends `Mammal`.
-   - Implements all abstract methods (`makeSound` and `eat`).
+### Interface - `Animal`
+- Represents a general contract for all animals.
+- Says what an animal can do (e.g., `makeSound()`).
+- Has no full method code, except for default methods like `sleep()`.
 
-## How to Run
-Compile and run `Main.java`. The output will demonstrate the use of interface methods, abstract class methods, and concrete class implementations.
+### Abstract Class - `Mammal`
+- A base class for animals like dogs.
+- Has some methods with code (`walk()`, `breathe()`) and some that need to be completed by child classes (`giveBirth()`).
+
+### Concrete Class - `Dog`
+- A full class that fills in all the missing parts.
+- Can be used to create real objects.
+- - Calls methods from all two types:
+  - `makeSound()` → prints “Bark!”
+  - `giveBirth()` → prints “Dog is giving birth.”
+  - Adds its own method `eat()`.
+
